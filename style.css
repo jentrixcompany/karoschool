@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #3b6792;
+}
+
+header {
+  background: #0b5d1d;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+nav {
+  background: #1d6fa5;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: #e6f2ff;
+  padding: 50px;
+  text-align: center;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.light {
+  background: white;
+}
+
+.grades, .staff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.grades div, .staff div {
+  background: #176da7;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
