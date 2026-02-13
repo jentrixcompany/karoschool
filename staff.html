@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Karo School | Staff</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karo School | Staff</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Header */
+header {
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* Navigation */
+nav {
+  background: #1d6fa5;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Staff Grid */
+.staff-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Staff Card */
+.staff-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+}
+
+.staff-card h3 {
+  margin: 10px 0 5px;
+  color: #0b3c5d;
+}
+
+.staff-card p {
+  margin: 0;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Our Staff</h1>
+  <h1>Karo School Staff</h1>
+  <p>Dedicated Professionals Committed to Excellence</p>
 </header>
 
 <nav>
@@ -18,24 +101,88 @@
 </nav>
 
 <section>
-  <h2>Meet Our Dedicated Team</h2>
+  <h2>Meet Our Team</h2>
+  <p>
+    Our staff members are highly qualified and committed to providing
+    quality education and guidance to all students.
+  </p>
 
-  <div class="staff">
-    <div>Mr. John Karo – Principal</div>
-    <div>Mrs. Anne Wanjiku – Deputy Principal</div>
-    <div>Mr. Peter Otieno – Senior Teacher</div>
-    <div>Ms. Faith Njeri – Mathematics Teacher</div>
-    <div>Mr. Brian Mwangi – Science Teacher</div>
-    <div>Mrs. Grace Achieng – Languages Teacher</div>
-    <div>Mr. Samuel Kiptoo – ICT Teacher</div>
-    <div>Ms. Lydia Chebet – Guidance & Counseling</div>
-    <div>Mr. Kevin Mutua – Sports Coach</div>
+  <div class="staff-container">
+
+    <div class="staff-card">
+      <h3>Mr. John Karo</h3>
+      <p>Principal</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Mrs. Anne Wanjiku</h3>
+      <p>Deputy Principal</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Mr. Peter Otieno</h3>
+      <p>Senior Teacher</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Ms. Faith Njeri</h3>
+      <p>Mathematics Teacher</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Mr. Brian Mwangi</h3>
+      <p>Science Teacher</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Mrs. Grace Achieng</h3>
+      <p>Languages Teacher</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Mr. Samuel Kiptoo</h3>
+      <p>ICT Teacher</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Ms. Lydia Chebet</h3>
+      <p>Guidance & Counseling</p>
+    </div>
+
+    <div class="staff-card">
+      <h3>Mr. Kevin Mutua</h3>
+      <p>Games & Sports Coach</p>
+    </div>
+
   </div>
 </section>
 
 <footer>
+  <p>📍 Karo School | P.O Box 123</p>
+  <p>📞 Phone: 0700 000 000</p>
+  <p>✉ Email: info@karoschool.ac.ke</p>
   <p>© 2026 Karo School</p>
 </footer>
+
+<script>
+// Back to top button
+const btn = document.createElement("button");
+btn.innerText = "⬆ Top";
+btn.style.position = "fixed";
+btn.style.bottom = "20px";
+btn.style.right = "20px";
+btn.style.padding = "10px";
+btn.style.display = "none";
+document.body.appendChild(btn);
+
+window.onscroll = () => {
+  btn.style.display = window.scrollY > 300 ? "block" : "none";
+};
+
+btn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+</script>
 
 </body>
 </html>

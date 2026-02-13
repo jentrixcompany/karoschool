@@ -25,8 +25,11 @@ nav a {
 }
 
 .hero {
-  background: #e6f2ff;
-  padding: 50px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1509062522246-3755977927d7');
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -59,4 +62,48 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+
+/* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-align: center;
+  padding: 40px;
+  background: #0b3c5d;
+  color: white;
+}
+
+.stats h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* Staff Cards */
+.staff-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Better Footer */
+footer {
+  background: #0b3c5d;
+  color: white;
+  padding: 30px;
+  text-align: center;
 }
