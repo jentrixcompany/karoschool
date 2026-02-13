@@ -150,3 +150,20 @@ footer {
   display: block;
   border-radius: 12px;
 }
+
+/* Library Section */
+.library-section, .ict-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  margin-top: 40px;
+}
+
+.library-image img, .ict-image img {
+  width: 100%;
+  max-width: 800px; /* controls width on PC */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
+}
