@@ -151,7 +151,6 @@ footer {
   border-radius: 12px;
 }
 
-/* Library Section */
 .library-section, .ict-section {
   padding: 60px 20px;
   text-align: center;
@@ -161,7 +160,7 @@ footer {
 
 .library-image img, .ict-image img {
   width: 100%;
-  max-width: 800px; /* controls width on PC */
+  max-width: 800px;
   height: auto;
   border-radius: 12px;
   display: block;
