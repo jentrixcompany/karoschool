@@ -144,16 +144,11 @@ footer {
 
 .classroom-image img {
   width: 100%;
-  height: 500px;
+  height: auto;        /* keeps natural proportion */
+  max-height: 400px;   /* prevents being too tall */
   object-fit: cover;
   display: block;
-}
-
-.classroom-image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+  border-radius: 12px;
 }
 
 .classroom-image img:hover {
